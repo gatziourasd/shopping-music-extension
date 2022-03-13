@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","sources":["../../src/background/main.js"],"sourcesContent":["console.log(\"start\");\r\n"],"names":[],"mappings":";;;CAAA,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC;;;;;;"}

@@ -1,0 +1,20 @@
+{
+  "name": "Shopping Music",
+  "description": "Play your favorite tunes automatically when visiting your chosen websites.",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "permissions": ["storage", "tabs", "unlimitedStorage"],
+  "background": {
+    "scripts": ["background/bundle.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "assets/app_icons/icon16.png",
+      "48": "assets/app_icons/icon48.png",
+      "128": "assets/app_icons/icon128.png"
+    },
+    "default_title": "Shopping Music",
+    "default_popup": "popup/popup.html"
+  }
+}
