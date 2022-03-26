@@ -5,16 +5,17 @@
   "manifest_version": 2,
   "permissions": ["storage", "tabs", "unlimitedStorage"],
   "background": {
-    "scripts": ["background/bundle.js"],
+    "scripts": ["/build/background-bundle.js"],
     "persistent": true
   },
   "browser_action": {
     "default_icon": {
-      "16": "assets/app_icons/icon16.png",
-      "48": "assets/app_icons/icon48.png",
-      "128": "assets/app_icons/icon128.png"
+      "16": "/assets/app-icons/icon16.png",
+      "24": "/assets/app-icons/icon24.png",
+      "48": "/assets/app-icons/icon48.png",
+      "128": "/assets/app-icons/icon128.png"
     },
-    "default_title": "Shopping Music",
-    "default_popup": "popup/popup.html"
+    "default_title": "Shop Music",
+    "default_popup": "index.html"
   }
 }

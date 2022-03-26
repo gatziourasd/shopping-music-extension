@@ -1,0 +1,51 @@
+:root {
+  --accent-color: #14b1e7;
+}
+
+* {
+  box-sizing: border-box;
+  cursor: url("/assets/icons/cursor.png") 8 0, auto !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 12px 0;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #494949;
+
+  background: linear-gradient(180deg, #f6f6f6 0%, #f0f0f0 100%, #ededed 100%);
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: transform 100ms;
+}
+
+button:hover {
+  transform: scale(1.03);
+  transition: transform 100ms;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+button:active {
+  transform: scale(0.97);
+  transition: transform 100ms;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(180deg, #f3f3f3 0%, #f0f0f0 100%, #e0e0e0 100%);
+}

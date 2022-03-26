@@ -1,17 +1,27 @@
 {
-  "name": "shopping-music-extension",
+  "name": "shopping-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c",
-    "package": ""
+    "dev-background": " rollup -i background/main.js -o dist/build/background-bundle.js -f iife --watch",
+    "dev-foreground": "rollup -c -w",
+    "start": "sirv ./dist --no-clear",
+    "build": "rollup -i background/main.js -o dist/build/background-bundle.js -f iife && rollup -c"
   },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^21.0.2",
-    "@rollup/plugin-node-resolve": "^13.1.3",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-replace": "^3.1.0",
+    "rollup": "^2.67.2",
     "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-serve": "^1.1.0",
-    "rollup-plugin-svelte": "^7.1.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "sirv-cli": "^2.0.0",
+    "svelte": "^3.0.0"
   }
 }
